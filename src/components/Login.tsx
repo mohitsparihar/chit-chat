@@ -5,16 +5,16 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 
 const LoginComponent = () => {
-  const [country, setCountry] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState<string>("");
+  const [enterPassword, setEnterPassword] = useState<boolean>(false);
 
   const handlePhoneInputChange = (e: any) => {
     setEmail(e.target.value);
   };
   return (
-    <div className="border text-center p-2 flex flex-col mx-auto">
-      <div className="text-3xl font-bold mb-2">Welcome Back</div>
-      <div className="flex items-center justify-center flex-col mb-2">
+    <div className="text-center flex flex-col mx-auto">
+      <div className="text-3xl font-bold mb-10">Welcome Back</div>
+      <div className="flex items-center justify-center flex-col mb-10">
         <input
           className="border p-1 rounded w-full"
           value={email}
@@ -22,17 +22,22 @@ const LoginComponent = () => {
           type="email"
           onChange={handlePhoneInputChange}
         />
-        <button className="bg-green-500 text-white mt-2 p-2 rounded-md w-full">
-          Continue
-        </button>
+        {!enterPassword && (
+          <button
+            className="bg-emerald-600 text-white mt-2 p-2 rounded-md w-full"
+            onClick={() => setEnterPassword(true)}
+          >
+            Continue
+          </button>
+        )}
       </div>
       <button className="flex border-gray-300 border mb-2 p-2 rounded-md">
         <FcGoogle className="text-4xl" />
-        <span className="text white text-2xl">Login with Google</span>
+        <span className="text white text-2xl ml-2">Login with Google</span>
       </button>
       <button className="flex border-gray-300 border mb-2 p-2 rounded-md">
         <FaFacebook className="text-4xl text-blue-500" />
-        <span className="text white text-2xl">Login with Facebook</span>
+        <span className="text white text-2xl ml-2">Login with Facebook</span>
       </button>
     </div>
   );

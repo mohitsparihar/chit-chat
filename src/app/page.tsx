@@ -9,7 +9,7 @@ export default function Home() {
         </button>
       </Link>
       <Link href="/signup">
-        <button className="bg-green-500 text-white mt-2 p-2 rounded-md">
+        <button className="bg-emerald-600 text-white mt-2 p-2 rounded-md">
           Signup
         </button>
       </Link>
