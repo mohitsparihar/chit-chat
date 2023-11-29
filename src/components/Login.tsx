@@ -8,7 +8,7 @@ const LoginComponent = () => {
   const [email, setEmail] = useState<string>("");
   const [enterPassword, setEnterPassword] = useState<boolean>(false);
 
-  const handlePhoneInputChange = (e: any) => {
+  const handleChange = (e: any) => {
     setEmail(e.target.value);
   };
   return (
@@ -20,7 +20,7 @@ const LoginComponent = () => {
           value={email}
           placeholder="Email address"
           type="email"
-          onChange={handlePhoneInputChange}
+          onChange={handleChange}
         />
         {!enterPassword && (
           <button
@@ -31,13 +31,13 @@ const LoginComponent = () => {
           </button>
         )}
       </div>
-      <button className="flex border-gray-300 border mb-2 p-2 rounded-md">
+      <button className="flex border-gray-300 border mb-2 p-2 rounded-md items-center justify-center">
         <FcGoogle className="text-4xl" />
-        <span className="text white text-2xl ml-2">Login with Google</span>
+        <span className="text white ml-2">Login with Google</span>
       </button>
-      <button className="flex border-gray-300 border mb-2 p-2 rounded-md">
+      <button className="flex border-gray-300 border mb-2 p-2 rounded-md items-center justify-center">
         <FaFacebook className="text-4xl text-blue-500" />
-        <span className="text white text-2xl ml-2">Login with Facebook</span>
+        <span className="text white ml-2">Login with Facebook</span>
       </button>
     </div>
   );

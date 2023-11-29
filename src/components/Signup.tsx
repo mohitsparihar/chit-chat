@@ -13,7 +13,7 @@ const SignupComponent = () => {
   };
   return (
     <div className="text-center flex flex-col mx-auto">
-      <div>Create your account </div>
+      <div className="text-3xl font-bold mb-10">Create your account </div>
       <div className="flex items-center justify-center flex-col mb-10">
         <input
           className="border p-1 rounded w-full"
@@ -38,20 +38,20 @@ const SignupComponent = () => {
         Already have an account?{" "}
         <span className="text-emerald-600">Log in</span>
       </div>
-      <div>
+      <div className="flex justify-center items-center">
         <span>-----------------</span>
         <span>OR</span>
         <span>-----------------</span>
         <hr />
       </div>
 
-      <button className="flex border-gray-300 border mb-2 p-2 rounded-md">
+      <button className="flex border-gray-300 border mb-2 p-2 rounded-md items-center justify-center">
         <FcGoogle className="text-4xl" />
-        <span className="text white text-2xl ml-2">Continue with Google</span>
+        <span className="text white ml-2">Continue with Google</span>
       </button>
-      <button className="flex border-gray-300 border mb-2 p-2 rounded-md">
+      <button className="flex border-gray-300 border mb-2 p-2 rounded-md items-center justify-center">
         <FaFacebook className="text-4xl text-blue-500" />
-        <span className="text white text-2xl ml-2">Continue with Facebook</span>
+        <span className="text white ml-2">Continue with Facebook</span>
       </button>
     </div>
   );
