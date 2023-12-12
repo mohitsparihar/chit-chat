@@ -1,12 +1,13 @@
+"use client";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between pt-1">
-      <div className="logo">Logo</div>
+    <div className="flex justify-between items-center bg-blue-300">
+      <div className="logo p-2">Chit-Chat</div>
       <div>
-        <button className="login-button border mr-1 p-1">Login</button>
-        <button className="signup-button border p-1">Signup</button>
+        <button className="bg-blue-500 text-white p-2">Login</button>
+        <button className="bg-emerald-600 text-white p-2">Signup</button>
       </div>
     </div>
   );
