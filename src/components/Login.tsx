@@ -12,7 +12,7 @@ const LoginComponent = () => {
     setEmail(e.target.value);
   };
   return (
-    <div className="text-center flex flex-col mx-auto">
+    <div className="text-center flex flex-col mx-auto justify-center align-middle">
       <div className="text-3xl font-bold mb-10">Welcome Back</div>
       <div className="flex items-center justify-center flex-col mb-10">
         <input
