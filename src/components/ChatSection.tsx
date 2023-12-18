@@ -17,7 +17,9 @@ const ChatSection = () => {
           type="text"
           placeholder="Type your message here"
         />
-        <button className="ml-2 bg-emerald-500 text-white p-1 border-2">Send</button>
+        <button className="ml-2 bg-emerald-500 text-white p-1 border-2">
+          Send
+        </button>
       </div>
     </div>
   );

@@ -5,12 +5,11 @@ import React from "react";
 
 function page() {
   return (
-    <div>
+    <div className="h-screen max-w-screen-xl min-w-screen-lg mx-auto">
       {/* navbar */}
       <Navbar />
-
-      <div className="main-section flex h-full">
-        {/* chat list */}
+      {/* chat list */}
+      <div className="flex h-[94vh]">
         <ChatList />
         {/* messagin space */}
         <ChatSection />

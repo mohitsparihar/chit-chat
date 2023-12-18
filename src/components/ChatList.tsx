@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ChatList = () => {
   return (
@@ -10,7 +10,12 @@ const ChatList = () => {
           className="p-1 w-full outline-none"
         />
       </div>
-      <div className=""></div>
+      <div className="px-[2px] border-white w-full h-full">
+        <div className="flex">
+          <button className="bg-blue-500 text-white p-1 border-2">Chats</button>
+          <button className="bg-blue-500 text-white p-1 border-2">Contacts</button>
+        </div>
+      </div>
     </div>
   );
 };
